@@ -74,6 +74,7 @@ class MainScreenTableViewController: UITableViewController {
         detailsScreen.providesPresentationContextTransitionStyle = true
         detailsScreen.definesPresentationContext = true
         detailsScreen.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        
         self.present(detailsScreen, animated: true, completion: nil)
         
         let object = objects[indexPath.row]
