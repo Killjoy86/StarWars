@@ -44,7 +44,7 @@ class DetailsScreenViewController: UIViewController {
         self.openBrowserButton.layer.borderColor = UIColor(hex: 0xF22121).cgColor
         view.backgroundColor = UIColor.black.withAlphaComponent(0)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
-            UIView.animate(withDuration: 0.1, animations: {
+            UIView.animate(withDuration: 0.15, animations: {
                 self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
             })
         }
