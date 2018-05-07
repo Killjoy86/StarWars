@@ -16,7 +16,7 @@ class ObjectTableViewCell: UITableViewCell {
     @IBOutlet weak var genderImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthYearLabel: UILabel!
-    
+
     // MARK: - awakeFromNib
 
     override func awakeFromNib() {

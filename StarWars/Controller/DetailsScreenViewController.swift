@@ -27,7 +27,7 @@ class DetailsScreenViewController: UIViewController {
         view.backgroundColor = UIColor.black.withAlphaComponent(0)
         self.dismiss(animated: true)
     }
-    
+
     @IBAction func openBrowserAction(_ sender: UIButton) {
         if let url = URL(string: url) {
             UIApplication.shared.open(url, options: [:])

@@ -34,12 +34,12 @@ class MainScreenTableViewController: UITableViewController {
             self.downLoadObjects()
         }
     }
-    
+
     private func configure(_ cell: ObjectTableViewCell, at indexPath: IndexPath) {
         let object = objects[indexPath.row]
         cell.nameLabel.text = object.name
         cell.birthYearLabel.text = object.birthYear
-        
+    
         if object.gender != .none {
             if object.gender == .male {
                 cell.genderImageView.image = UIImage(named: "human-male")
@@ -52,32 +52,32 @@ class MainScreenTableViewController: UITableViewController {
             }
         }
     }
-    
+
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectTableViewCell
         configure(cell, at: indexPath)
         return cell
     }
-    
+
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+
         let detailsScreen = storyboard?.instantiateViewController(withIdentifier: "detailsScreen") as! DetailsScreenViewController
 
         detailsScreen.modalPresentationStyle = .overCurrentContext
-        
+
         self.present(detailsScreen, animated: true, completion: nil)
-        
+
         let object = objects[indexPath.row]
-        
+
         detailsScreen.nameLabel.text = object.name
         detailsScreen.detailLabel.text = object.height + " | " + object.mass + " | " + object.gender.rawValue
         detailsScreen.filmsLabel.text = String(object.films.count)
@@ -85,7 +85,7 @@ class MainScreenTableViewController: UITableViewController {
         detailsScreen.vehiclesLabel.text = String(object.vehicles.count)
         detailsScreen.url = object.url
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 76
     }

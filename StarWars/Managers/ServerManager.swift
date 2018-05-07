@@ -19,7 +19,7 @@ class ServerManager: NSObject {
     let baseURL = "https://swapi.co/api/"
 
     //MARK: - Requests
-    
+
     func getAllObjects(name: String,
                        success: @escaping (_ objects: [Object]) -> (),
                        failure: @escaping (_ statusCode: Int?, _ error: Error?) -> ()) {

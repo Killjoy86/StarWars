@@ -13,9 +13,9 @@ class SplashScreenViewController: UIViewController {
     // MARK: - Properties
 
     var splashUrl = "https://cdn.iconscout.com/public/images/icon/free/png-512/star-wars-logo-tv-show-series-31ebf3d1fc35cf6a-512x512.png"
-    
+
     @IBOutlet weak var imageView: UIImageView!
-    
+
     // MARK: - UView methods
 
     override func viewDidLoad() {
@@ -23,9 +23,9 @@ class SplashScreenViewController: UIViewController {
 
         downLoadSplashScreen()
     }
-    
+
     // MARK: - Private methods
-    
+
     private func downLoadSplashScreen() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         guard let url = URL(string: splashUrl) else { return }
