@@ -39,7 +39,7 @@ class MainScreenTableViewController: UITableViewController {
         let object = objects[indexPath.row]
         cell.nameLabel.text = object.name
         cell.birthYearLabel.text = object.birthYear
-    
+
         if object.gender != .none {
             if object.gender == .male {
                 cell.genderImageView.image = UIImage(named: "human-male")

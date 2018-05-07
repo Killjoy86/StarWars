@@ -30,7 +30,7 @@ class Object {
     var starships = [String]()
 
     // MARK: - Initializer
-
+    
     init(responseJSON: JSON) {
         if let name = responseJSON["name"].string {
             self.name = name

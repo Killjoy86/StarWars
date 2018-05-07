@@ -23,7 +23,7 @@ class SplashScreenViewController: UIViewController {
 
         downLoadSplashScreen()
     }
-
+    
     // MARK: - Private methods
 
     private func downLoadSplashScreen() {
