@@ -33,7 +33,7 @@ class DetailsScreenViewController: UIViewController {
             UIApplication.shared.open(url, options: [:])
         }
     }
-
+    
     // MARK: - UIView methods
 
     override func viewDidLoad() {

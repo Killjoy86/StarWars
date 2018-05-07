@@ -29,6 +29,6 @@ class ObjectTableViewCell: UITableViewCell {
         self.view.layer.shadowOpacity = 0.8
         self.view.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.view.layer.shadowRadius = 1
-
+        
     }
 }

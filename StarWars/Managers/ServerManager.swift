@@ -17,7 +17,7 @@ class ServerManager: NSObject {
     static let shared = ServerManager()
     var sessionManager: SessionManager!
     let baseURL = "https://swapi.co/api/"
-    
+
     //MARK: - Requests
 
     func getAllObjects(name: String,

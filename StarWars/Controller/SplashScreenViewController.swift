@@ -25,7 +25,7 @@ class SplashScreenViewController: UIViewController {
     }
     
     // MARK: - Private methods
-
+    
     private func downLoadSplashScreen() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         guard let url = URL(string: splashUrl) else { return }
