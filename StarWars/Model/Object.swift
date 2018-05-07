@@ -60,14 +60,14 @@ class Object {
         if let vehiclesJson = responseJSON["vehicles"].array {
             for i in 0..<vehiclesJson.count {
                 if let vehiclesString = vehiclesJson[i].string {
-                    films.append(vehiclesString)
+                    vehicles.append(vehiclesString)
                 }
             }
         }
         if let starshipsJson = responseJSON["starships"].array {
             for i in 0..<starshipsJson.count {
                 if let starshipsString = starshipsJson[i].string {
-                    films.append(starshipsString)
+                    starships.append(starshipsString)
                 }
             }
         }

@@ -34,7 +34,7 @@ class SplashScreenViewController: UIViewController {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") else { return }
-                mainVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                mainVC.modalTransitionStyle = .crossDissolve
                 self.present(mainVC, animated: true)
             }
         }) { (statusCode, error) in

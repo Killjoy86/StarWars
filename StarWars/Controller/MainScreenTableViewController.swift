@@ -71,9 +71,8 @@ class MainScreenTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let detailsScreen = storyboard?.instantiateViewController(withIdentifier: "detailsScreen") as! DetailsScreenViewController
-        detailsScreen.providesPresentationContextTransitionStyle = true
-        detailsScreen.definesPresentationContext = true
-        detailsScreen.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+
+        detailsScreen.modalPresentationStyle = .overCurrentContext
         
         self.present(detailsScreen, animated: true, completion: nil)
         

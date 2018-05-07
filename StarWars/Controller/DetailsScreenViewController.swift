@@ -48,6 +48,5 @@ class DetailsScreenViewController: UIViewController {
                 self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
             })
         }
-    
     }
 }
